@@ -7,9 +7,9 @@
 - David Valenzuela
 
 ## Descripción del proyecto
-En este trabajo estudiamos el algoritmo **spectral embedding** como técnica de reducción de la dimensionalidad no lineal sobre el dataset **Fashion MNIST**, con el objetivo de representar imágenes de prendas de ropa en una variedad de menor dimensión preservando, en la medida de lo posible, la estructura local de los datos.
+En este trabajo estudiamos el algoritmo **spectral embedding** como técnica de reducción de la dimensionalidad no lineal sobre el dataset Fashion MNIST, con el objetivo de representar imágenes de prendas de ropa en una variedad de menor dimensión preservando, en la medida de lo posible, la estructura local de los datos.
 
-Trabajamos con un subconjunto de 12.000 imágenes del dataset original. Éstas tienen un tamaño de 28×28 píxeles en escala de grises, y llevan asignadas una de las 10 etiquetas posibles según el tipo de prenda que representen (pantalones, abrigos, camisetas, etc). Una especificación más detallada de los datos se puede encontrar en el repositorio de Github oficial de [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist).
+Trabajamos con un subconjunto de 12.000 imágenes del dataset original. Éstas tienen un tamaño de 28×28 píxeles en escala de grises, y llevan asignadas una de las 10 etiquetas posibles según el tipo de prenda que representan (pantalones, abrigos, camisetas, etc). Una especificación más detallada de los datos se puede encontrar en el repositorio de Github oficial de [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist).
 
 Los principales objetivos que abordamos son:
 - la preparación y visualización de los datos,
