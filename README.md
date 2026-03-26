@@ -7,20 +7,20 @@
 - David Valenzuela
 
 ## Descripción del proyecto
-Este trabajo estudia la aplicación de **spectral embedding** como técnica de reducción de dimensionalidad no lineal sobre el dataset **Fashion MNIST**, con el objetivo de representar imágenes de prendas en un espacio de menor dimensión preservando, en la medida de lo posible, la estructura local de los datos.
+En este trabajo estudiamos el algoritmo **spectral embedding** como técnica de reducción de la dimensionalidad no lineal sobre el dataset **Fashion MNIST**, con el objetivo de representar imágenes de prendas en una variedad de menor dimensión preservando, en la medida de lo posible, la estructura local de los datos.
 
-Para ello, el proyecto combina una parte teórica y otra experimental. En primer lugar, se introduce el fundamento matemático del método y, a continuación, se desarrolla su aplicación práctica sobre imágenes en escala de grises de tamaño 28×28 pertenecientes a 10 clases distintas. Dado el coste computacional de algunos experimentos, parte del análisis se realiza sobre un subconjunto balanceado de 12.000 imágenes.
+Trabajamos con un subconjunto de 12.000 imágenes del dataset original. Éstas tienen un tamaño de 28×28 píxeles en escala de grises, y llevan asignadas una de las 10 etiquetas posibles según el tipo de prenda que representen (pantalones, abrigos, camisetas, etc). Una especificación más detallada de los datos se puede encontrar en el repositorio de Github oficial de [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist).
 
-A lo largo del notebook se abordan las distintas etapas del proceso, entre ellas:
+Los principales objetivos que abordamos son:
 - la preparación y visualización de los datos,
 - la construcción de grafos de vecindad sobre las imágenes,
 - la elección de hiperparámetros relevantes,
-- la comparación de distintas matrices de afinidad, incluyendo grafos *k*-NN con distancia euclídea, distancia coseno, pesos binarios y pesos definidos mediante núcleo RBF,
+- la comparación de distintas matrices de afinidad,
 - el análisis e interpretación gráfica de los *embeddings* obtenidos,
 - el estudio de la dimensión más adecuada para la representación,
-- y la exploración de la relación entre **spectral embedding** y **clustering** mediante la aplicación de **KMeans**.
+- y la exploración de la relación entre **spectral embedding** y ** spectral clustering** mediante la aplicación de **KMeans**.
 
-Así, el proyecto no solo presenta una implementación del método, sino también una comparación de distintas decisiones de modelado y una discusión de los resultados obtenidos.
+Así, no solo presentamos el algoritmo, sino también una comparativa entre distintas decisiones de modelado y una discusión sobre los resultados obtenidos.
 
 ## Estructura del repositorio
 - `src/Spectral_embedding.ipynb`: notebook que hemos utilizado para el desarrollo del proyecto. En él incluimos todo el código implementado y explicaciones relevantes.
